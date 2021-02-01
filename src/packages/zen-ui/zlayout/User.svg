@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1024px" height="1024px" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title>icon/Networking/Customer</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M723.5,649.6 C704.6,604.8 677.4,564.6 642.9,530.1 C608.4,495.6 568.2,468.5 523.4,449.5 C523,449.3 522.6,449.2 522.2,449 C584.5,404 625,330.7 625,248 C625,111 514,0 377,0 C240,0 129,111 129,248 C129,330.7 169.5,404 231.8,449.1 C231.4,449.3 231,449.4 230.6,449.6 C185.8,468.5 145.6,495.6 111.1,530.2 C76.6,564.7 49.5,604.9 30.5,649.7 C11.9,693.5 2,740 1,787.8 C0.9,792.3 4.5,796 9,796 L69,796 C73.4,796 76.9,792.5 77,788.2 C79,711 110,638.7 164.8,583.9 C221.5,527.2 296.8,496 377,496 C457.2,496 532.5,527.2 589.2,583.9 C644,638.7 675,711 677,788.2 C677.1,792.6 680.6,796 685,796 L745,796 C749.5,796 753.1,792.3 753,787.8 C752,740 742.1,693.5 723.5,649.6 Z" id="path-1"></path>
+    </defs>
+    <g id="icon/Networking/Customer" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon" transform="translate(135.000000, 114.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#0C85EE" fill-rule="nonzero" xlink:href="#path-1"></use>
+        </g>
+        <g id="user" fill="#000000" fill-rule="nonzero" opacity="0">
+            <rect id="Rectangle-path" x="0" y="0" width="1024" height="1024"></rect>
+        </g>
+    </g>
+</svg>

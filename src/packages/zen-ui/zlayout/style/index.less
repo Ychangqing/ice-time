@@ -1,0 +1,238 @@
+.zen-layout-trigger {
+    .ant-layout-sider-trigger {
+        box-shadow: @Shadow-2-B;
+    }
+
+    .trigger {
+        font-size: 18px;
+        padding: 0 24px;
+        cursor: pointer;
+        transition: color 0.3s;
+
+        :hover {
+            color: #1890ff;
+        }
+    }
+}
+
+.zen-layout--logo {
+    padding-left: 24px;
+    // border-bottom: @border-width @border-style @border-color;
+}
+
+.zen-layout--logo:after {
+    content: '';
+    overflow: hidden;
+
+}
+
+.zen-layout--logo img {
+    height: 24px;
+    display: inline-block;
+    transition: all 0.1s;
+    vertical-align: middle;
+
+    +img {
+        max-width: 118px;
+        max-height: 22px;
+        margin-left: 8px;
+    }
+}
+
+.ant-layout-sider-collapsed .zen-layout--logo {
+    padding-left: 8px;
+
+    img:first-of-type {
+        height: 36px;
+    }
+}
+
+.ant-layout-sider-collapsed .zen-layout--logo img+img {
+    width: 0px;
+    margin-left: 0px;
+}
+
+.ant-layout-sider {
+    .anticon.zen-menu--anticon {
+        margin-right: 7px;
+    }
+}
+
+.zen-menu--anticon {
+    vertical-align: middle;
+}
+
+.zen-menu--anticon--img {
+    width: 14px;
+    filter: invert(50%);
+}
+
+.zen-menu--title {
+    position: relative;
+
+    i {
+        font-style: normal;
+    }
+
+    img {
+        position: absolute;
+        top: -3px;
+        right: -11px;
+        width: 8px;
+    }
+}
+
+.ant-menu-inline-collapsed .zen-menu--anticon--img {
+    width: 16px;
+}
+
+.ant-layout-sider-children>.ant-menu {
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background: #c1c1c1;
+    }
+
+    &::-webkit-scrollbar-track {
+        border-radius: 0;
+        background: rgba(0, 0, 0, 0.1);
+    }
+}
+
+.ant-menu {
+    position: relative;
+
+    .ant-menu-dark .ant-menu-inline.ant-menu-sub {
+        box-shadow: none;
+    }
+
+    .ant-menu-item-active .zen-menu--anticon--img,
+    .ant-menu-item-selected .zen-menu--anticon--img {
+        filter: invert(0%);
+    }
+}
+
+.ant-menu-dark {
+
+    .ant-menu-item-active .zen-menu--anticon--img,
+    .ant-menu-item-selected .zen-menu--anticon--img {
+        filter: invert(50%) brightness(2);
+    }
+
+    .zen-menu--anticon--img {
+        filter: invert(50%) brightness(1.8);
+    }
+}
+
+.ant-layout {
+
+    .ant-layout-header {
+        padding: 0;
+        border-bottom: @border-width @border-style @border-color;
+    }
+
+    .ant-menu-root {
+        padding-top: 8px;
+
+        >.ant-menu-item,
+        >.ant-menu-submenu>.ant-menu-submenu-title {
+            margin: 0;
+            padding-left: 16px !important;
+        }
+
+        .ant-menu-submenu .ant-menu-submenu {
+            >.ant-menu-submenu-title {
+                margin: 0;
+                padding-left: 40px !important;
+            }
+
+            .ant-menu-item {
+                margin: 0;
+                padding-left: 56px !important;
+            }
+        }
+
+        .ant-menu-sub .ant-menu-item {
+            margin: 0;
+            padding-left: 40px !important;
+        }
+    }
+
+    .ant-menu {
+        margin-top: -1px;
+    }
+
+    .ant-layout-sider-dark {
+        .ant-menu-submenu-title:hover i {
+
+            &:before,
+            &:after {
+                background: #fff;
+            }
+        }
+
+        .ant-menu-inline.ant-menu-sub {
+            box-shadow: unset;
+        }
+    }
+
+    .zen-layout--header__light {
+        background: #fff;
+        box-shadow: 0px 1px 4px 0px rgba(0, 21, 41, 0.12);
+        border: none !important;
+    }
+}
+
+.ant-layout-sider-light {
+
+    .ant-menu-inline,
+    .ant-menu-inline-collapsed {
+        border: 0;
+    }
+
+    .ant-layout-sider-children {
+        box-shadow: @Shadow-2-B;
+    }
+}
+
+.zen-layout--menu__fixed__left,
+.zen-layout--menu__fixed__top {
+    position: fixed;
+}
+
+.zen-layout--menu__fixed__left {
+    height: 100%;
+    z-index: 1;
+
+    .ant-layout-sider-trigger {
+        position: fixed;
+    }
+}
+
+.zen-layout--menu__fixed__top {
+    width: 100%;
+    z-index: 10;
+}
+
+.zen-layout--header {
+    display: flex;
+}
+
+.zen-layout-menu--header {
+    flex: 1;
+    text-align: right;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.zen-layout-menu--header li {
+    padding: 0 @space*5px;
+}

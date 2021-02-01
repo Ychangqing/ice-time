@@ -1,0 +1,20 @@
+.zen-notification {
+    font-size: 12px;
+    position: fixed;
+    z-index: 1010;
+    max-width: calc(100vw - 32px);
+}
+
+.zen-notification-enter-active {
+    transition: all .3s ease;
+}
+
+.zen-notification-leave-active {
+    transition: all .3s cubic-bezier(1.0, 0.5, 0.8, 1.0);
+}
+
+.zen-notification-enter,
+.zen-notification-leave-to {
+    transform: translateX(100%);
+    opacity: 0;
+}

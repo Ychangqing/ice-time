@@ -1,0 +1,47 @@
+@import './antd-config';
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
+
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+    font-size: 14px;
+    color:@text-color;
+}
+
+h1, h2, h3, h4, h5, h6, hr, b, strong, th {
+    font-family:"OpenSans-Bold,OpenSans, PingFangSC-Bold,PingFang SC";
+}
+
+ul,li{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+.pointer{
+	cursor: pointer;
+}
+.blue{
+	color:@primary-color;
+}
+.clearfix::after,.clearfix::before {
+    clear: both;
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    line-height:0;
+}
+
+.zen-search-content {
+	padding: 24px 32px 12px 32px;
+	background: white;
+}
+.zen-table-content {
+	margin: 24px;
+}

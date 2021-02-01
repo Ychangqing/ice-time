@@ -1,0 +1,12 @@
+{
+    "name": "@zenlayer/zresult-page",
+    "version": "0.0.101",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "gitHead": "7fd52a535fc727c78153427f66d604aef988cc9e"
+}

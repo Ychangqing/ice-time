@@ -1,0 +1,26 @@
+.my-gallery {
+	display: flex !important;
+	width: fit-content !important;
+	height: auto !important;
+	flex-wrap: wrap !important;
+	figure {
+		width: 70px !important;
+		height: 45px !important;
+		overflow: hidden !important;
+		margin-right: 8px !important;
+		margin-bottom: 8px !important;
+		transition: all 0.2s !important;
+		cursor: pointer !important;
+		img {
+			transition: all 0.2s !important;
+			width: auto !important;
+			height: 100% !important;
+		}
+		&:hover {
+			img {
+				height: 105% !important;
+			}
+			box-shadow: @Shadow-3-B!important;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+.zmouse-menus {
+	position: fixed;
+	min-width: 60px;
+	min-height: 100px;
+	background-color: #ffffff;
+	box-shadow: @Shadow-3-RB;
+	border: 1px solid @line1-3;
+	border-radius: @space * 1px;
+	transition: all 0.2s ease-in-out;
+	padding: 3px;
+	z-index: 3333;
+}
+.zmouse-menu {
+	font-size: 14px;
+	text-align: left;
+    cursor: pointer;
+    min-width: 100px;
+    position: relative;
+	border-bottom: 1px solid @line1-3;
+	transition: color 0.3s ease;
+}
+.zmouse-menu:last-child {
+    border-bottom: none;
+}
+.zmouse-menu--save{
+    &:after{
+        content: '';
+        position: absolute;
+        right: -20px;
+        top: 50%;
+        transform: translateY(-25%);
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-left:7px solid @line1-3; 
+    }
+}
+.zmouse-menu--acitve{
+    color: @brand1-6;
+}
+.zmouse-menu:hover {
+	background-color: #1890ff;
+	color: #ffffff;
+}
+.zmouse-menus--medium,
+.zmouse-menus--large{
+    padding-left: @space * 3px;
+    line-height: @space * 8px;
+}
+.zmouse-menus--small{
+    padding-left: @space * 2px;
+    line-height: @space * 6px;
+}

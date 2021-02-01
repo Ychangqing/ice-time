@@ -1,0 +1,39 @@
+.zen-card .ant-card-extra button,
+.zen-card .ant-card-extra a {
+    margin-left: @space*2px;
+}
+
+.zen-card--content {
+    overflow: hidden;
+}
+
+.zen-card--content__down {
+    transition: height 0.35s cubic-bezier(0.645, 0.045, 0.355, 1),
+    opacity 0.35s cubic-bezier(0.645, 0.045, 0.355, 1) !important;
+}
+
+.zen-card--grid {
+    padding: 2px;
+}
+
+.zen-card--grid:after {
+    display: block;
+    clear: both;
+    visibility: hidden;
+    height: 0;
+    content: '';
+}
+
+.zen-card--icon__collapse {
+    font-size: 18px;
+    padding: 0 @space*2px;
+    transition: transform 0.24s;
+}
+
+.zen-card-right--icon {
+    transform: rotate(90deg);
+}
+
+.zen-card-down--icon {
+    transform: rotate(0);
+}
